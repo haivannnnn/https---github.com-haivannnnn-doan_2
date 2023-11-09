@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đăng Nhập</title>
+        <link rel="stylesheet" href="signup.css">
+    </head>
+    <body>
+        <div class="container">
+            <form id="form">
+                <h1>ĐĂNG KÝ</h1>
+                <div class="input-control">
+                    <label for="username">Tên người dùng</label>
+                    <input id="username" name="username" type="text" autocomplete="username">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" autocomplete="email">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="new-password">Nhập mật khẩu</label>
+                    <input id="new-password" name="new-password" type="password" autocomplete="off">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="confirm-password">Nhập lại mật khẩu</label>
+                    <input id="confirm-password" name="confirm-password" type="password" autocomplete="off">
+                    <div class="error"></div>
+                </div>
+                <button id="btn" type="submit" class="btn-submit">Đăng ký</button>
+                <div class="signup-link">
+                    <a href="login.html">Đăng Nhập</a>
+                </div>
+            </form>
+        </div>
+        <script src="signup.js"></script>
+    </body>
+</html>
