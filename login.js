@@ -1,75 +1,84 @@
-var tennguoidung = document.querySelector('#tennguoidung')
-var email = document.querySelector('#email')
-var password = document.querySelector('#password')
-var confirmPassword = document.querySelector('#confirm-password')
-var form = document.querySelector('form')
+let form = document.getElementById("form");
+let username = document.getElementById("username");
+let email = document.getElementById("email");
+let newpassword = document.getElementById("new-password");
+let confirmpassword = document.getElementById("confirm-password");
+let btn = document.getElementById("btn");
 
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  validation();
+});
+const setError = (ele, msg) => {
+  let box = ele.parentElement;
+  let error = box.querySelector(".error");
 
-function showError(input, message){
-    let parent = input.parentElement;
-    let small = parent.querySelector('small')
-    parent.classList.add('error')
-    small.innerText = message
+  error.innerText = msg;
+  box.classList.add("error");
+  box.classList.remove("success");
+};
+const setSuccess = (ele) => {
+  let box = ele.parentElement;
+  let error = box.querySelector(".error");
+
+  error.innerText = "";
+  box.classList.add("success");
+  box.classList.remove("error");
+};
+const mailFormat = (e) => {
+  const re = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/.test(email);;
+  return re;
 }
-
-function showSuccess(input){
-    let parent = input.parentElement;
-    let small = parent.querySelector('small')
-    parent.classList.remove('error')
-    small.innerText = ''
+const userFormat = (u) => {
+    const re = /[^0-9]/;
+    return re.test(u);
 }
+btn.addEventListener("click", () => {
+  let localItems = JSON.parse(localStorage.getItem("localItem"));
+  if (localItems === null) {
+    itemsList = [];
+  } else {
+    itemsList = localItems;
+  }
+  itemsList.push(username.value);
+  itemsList.push(email.value);
+  itemsList.push(newpassword.value);
+  itemsList.push(confirmpassword.value);
+  localStorage.setItem("localItem", JSON.stringify(itemsList));
+});
+function validation() {
+    let user = username.value.trim();
+    let mail = email.value.trim();
+    let pass1 = newpassword.value.trim();
+    let pass2 = confirmpassword.value.trim();
 
-function checkEmptyError(listInput){
-    let isEmptyError = false;
-    listInput.forEach(input => {
-        input.value = input.value.trim()
-
-        if(!input.value){
-            isEmptyError = true;
-            showError(input, 'khong duoc de trong')
-        }else{
-            showSuccess(input)
-        }
-    });
-}
-
-function checkEmailError(input){
-    const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
-    input.value = input.value.trim();
-
-    let isEmailError = !emailRegex.test(input.value)
-    if(emailRegex.test(input.value)){
-        showSuccess(input)
-    }else{
-        showError(input, 'Email Invalid')
+    if(user === '') {
+        setError(username, 'Bạn cần nhập Username');
+    } else if (!userFormat(user)) {
+        setError(username, "Username không hợp lệ");
+    }else {
+        setSuccess(username);
     }
-    return isEmailError
-}
-
-function checkLengthError(input, min, max){
-    input.value = input.value.trim()
-
-    if(input.value.length < min){
-        showError(input, `Phai co it nhat ${min} ky tu`)
-        return true
+    if(mail === '') {
+        setError(email, 'Bạn cần nhập Email');
+    // } else if (!mailFormat(mail)) {
+    //     setError(email, 'Email của bạn chưa hợp lệ');
+    } else {
+        setSuccess(email);
     }
-    if(input.value.length > max) { 
-        showError(input, `Khong duoc qua ${max} ky tu`)
-        return true
+
+    if(pass1 === '') {
+        setError(newpassword, 'Bạn cần nhập mật khẩu');
+    } else if (pass1.length < 8 ) {
+        setError(newpassword, 'Mật khẩu ít nhất có 8 ký tự.')
+    } else {
+        setSuccess(newpassword);
     }
-    showSuccess(input)
-    return false
-}
-form.addEventListener('submit', function(e){
-    e.preventDefault()
 
-    let isEmptyError = checkEmptyError(tennguoidung, email, password, confirmPassword)
-
-    let isEmailError = checkEmailError(email)
-
-    let isusernameLengthError = checkLengthError(tennguoidung, 3, 10)
-
-    // let isPasswordLengthError = checkLengthError(password)
-
-    // let isConfirmpasswordLengthError = checkLengthError(confirmPassword)
-})
+    if(pass2 === '') {
+        setError(confirmpassword, 'Mời bạn nhập lại mật khẩu');
+    } else if (pass2 !== pass1) {
+        setError(confirmpassword, "Mật khẩu không khớp");
+    } else {
+        setSuccess(confirmpassword);
+    }}

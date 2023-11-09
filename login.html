@@ -9,36 +9,31 @@
     </head>
     <body>
         <div class="container">
-            <form action="">
-                <h1>Đăng Nhập</h1>
-                <div class="form-control">
-                    <input id="tennguoidung" type="text" placeholder="Username">
-                    <small></small>
-                    <span></span>
+            <form id="form">
+                <h1>ĐĂNG KÝ</h1>
+                <div class="input-control">
+                    <label for="username">Tên người dùng</label>
+                    <input id="username" name="username" type="text" autocomplete="username">
+                    <div class="error"></div>
                 </div>
-
-                <div class="form-control">
-                    <input id="email" type="email" placeholder="Email">
-                    <small></small>
-                    <span></span>
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" autocomplete="email">
+                    <div class="error"></div>
                 </div>
-
-                <div class="form-control">
-                    <input id="password" type="password" placeholder="Password">
-                    <small></small>
-                    <span></span>
+                <div class="input-control">
+                    <label for="new-password">Nhập mật khẩu</label>
+                    <input id="new-password" name="new-password" type="password" autocomplete="off">
+                    <div class="error"></div>
                 </div>
-
-                <div class="form-control">
-                    <input id="confirm-password" type="password" placeholder="Confirm Password">
-                    <small></small>
-                    <span></span>
+                <div class="input-control">
+                    <label for="confirm-password">Nhập lại mật khẩu</label>
+                    <input id="confirm-password" name="confirm-password" type="password" autocomplete="off">
+                    <div class="error"></div>
                 </div>
-
-                <button type="submit" class="btn-submit">Đăng Nhập</button>
-                
+                <button id="btn" type="submit" class="btn-submit">Đăng ký</button>
                 <div class="signup-link">
-                    <a href="a">Đăng ký</a>
+                    <a href="main.html">Đăng Nhập</a>
                 </div>
             </form>
         </div>
