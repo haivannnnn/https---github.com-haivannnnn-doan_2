@@ -1,0 +1,124 @@
+html{
+    font-family: arial;
+}
+#main{
+    width: 1140px;
+    margin: 0px auto;
+}
+h2{
+    color: #2F6EBA;
+    margin-bottom: 40px;
+}
+#trai{
+    float: left;
+}
+#trai > img{
+    width: 350px;
+    float: left;
+    margin-right: 80px;
+    margin-bottom: 10px;
+}
+#phai{
+    margin-left: 10px;
+}
+#phai span{
+    font-size: 28px;
+}
+#phai b{
+    color: #EA3323;
+}
+#mau, #size, #soluong{
+    margin-top: 20px;
+}
+#mau span, #size span, #soluong span{
+    color: #BEC3D1;
+    font-size: 20px;
+}
+#mau a, #size a{
+    color: black;
+}
+#size input[type=button], #mau input[type=button]{
+    border: 1px solid #189EFF;
+    color: #189EFF;
+    background: #fff;
+    padding: 5px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+ul{
+    float: left;
+    clear: left;
+    
+}
+ul img{
+    width: 70px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+ul li{
+    display: inline;
+}
+#soluong{
+    margin-top: 65px;
+}
+#soluong input{
+    
+    
+    border: 1px solid grey;
+    background: #fff;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    
+    
+}
+#soluong input[type=button]{
+    height: 40px;
+    width: 50px;
+    
+}
+#soluong input[type=text]{
+    height: 35px;
+    width: 50px;
+    
+}
+#soluong input[type=button]:last-child{
+    width: 200px;
+    height: 50px;
+    margin-left: 20px;
+    font-weight: bold;
+    background: #FF3946;
+    color: #fff;
+    border: 0;
+}
+#thongtin{
+    margin-top: 70px;
+}
+#thongtin h2, #chitiet h2{
+    margin-bottom: 20px;
+}
+td:first-of-type{
+    font-weight: bold;
+    color: #837F77;
+    background: #EFEFEF;
+    width: 250px;
+    
+}
+td:last-of-type{
+    width: 500px;
+}
+.xam{
+    background: #FAFAFA;
+}
+#mota{
+    font-size: 18px;
+}
+#mota img{
+    width: 75%;
+    margin: 40px 0px;
+}

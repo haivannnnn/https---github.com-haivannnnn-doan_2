@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chitiet.css">
+    <script src="chitiet.js"></script>
+</head>
+<body>
+    <div id="main">
+		<div id="chitiet">
+			<h2>CHI TIẾT SẢN PHẨM</h2>
+			<div id="trai">
+				<img id="doianh" src="pro_1.jpg">
+				<ul>
+					<li><img onclick = nextimg() src="pro_1.jpg"></li>
+					<li><img onclick = nextimg() src="pro_8.jpeg"></li>
+					<li><img onclick = nextimg() src="pro_12.jpg"></li>
+				</ul>
+			</div>
+			<div id="phai">
+				<h1>Ti Vi Samsung Bravia Q_Led 55 inch<br> Dòng máy sang trọng và tiện dụng </h1>
+				<br>
+				<span>Giá: <b>16.500.000đ</b></span>
+				<div id="mau">
+					<span>Chọn màu: <a>Đen</a></span>
+					<br>
+					<input id="doimau" type="button" onclick="tong()"  value="Đen"></input>
+					<input id="doimau1" type="button" onclick="tong1()" value="Nâu đen"></input>
+					<input id="doimau2" type="button" onclick="tong2()" value="Xám"></input>
+				</div>
+				<div id="size">
+					<span>Chọn size: <a>inch</a></span>
+					<br>
+					<input id="doisize" type="button" onclick="doisize()" value="40"></input>
+					<input id="doisize1" type="button" onclick="doisize1()" value="50"></input>
+					<input id="doisize2" type="button" onclick="doisize2()" value="55"></input>
+					<!-- <input id="doisize3" type="button" onclick="doisize3()" value="XXL"></input> -->
+				</div>
+				<div id="soluong">
+					<span>Số lượng:</span>
+					<br>
+					<input type="button" onclick="sub('txt')" value="-"></input>
+					<input type="text" id="txt" value="1"></input>
+					<input type="button" onclick="plus('txt')" value="+"></input>
+					<a href="cart.html"><input type="button" value="CHỌN MUA"></input></a>					
+				</div>
+			</div>
+			
+		</div>
+		<div id="thongtin">
+			<h2>THÔNG TIN CHI TIẾT</h2>
+			<table cellpadding="15px" cellspacing="0">
+				<tr>
+					<td>Thương hiệu</td>
+					<td>Samsung</td>
+				</tr>
+				<tr>
+					<td>Xuất xứ thương hiệu</td>
+					<td class="xam">Hàn Quốc</td>
+				</tr>
+				<tr>
+					<td>Xuất xứ</td>
+					<td>Hàn Quốc</td>
+				</tr>
+				<tr>
+					<td>SKU</td>
+					<td class="xam">8457550311407</td>
+				</tr>
+				<tr>
+					<td>Độ phân giải</td>
+					<td>4k</td>
+				</tr>
+			</table>
+		</div>
+		<div id="mota">
+			<h2>CHI TIẾT SẢN PHẨM</h2>
+			<p>Google Tivi Sony 4K 55 inch KD-55X80K cho chất lượng hình ảnh sắc nét, độ bão hòa cao, hình ảnh mượt mà, hạn chế nhòe hình nhờ công nghệ nâng cấp chuẩn hình ảnh 4K X-Reality PRO. Công nghệ loa bất đối xứng X-Balanced cho chất lượng âm thanh cao dù thiết kế tivi mỏng.</p>
+			<p>Chúng tôi thường xuyên cập nhật những mẫu ti vi mới nhất từ kiểu dáng, độ phân giải, tính năng,...Nhằm giúp khách hàng lựa chọn được những sản phẩm chất lượng phù hợp với nhu cầu và sở thích của mình một cách dễ dàng nhất.</p>
+			<img id="doianh2" src="pro_11.jpeg">
+			<p>Giá sản phẩm trên đã bao gồm thuế theo luật hiện hành. Tuy nhiên tuỳ vào từng loại sản phẩm hoặc phương thức, địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh.</p>
+		</div>
+	</div>
+</body>
+</html>
