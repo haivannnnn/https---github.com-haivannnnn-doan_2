@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-family: helvetica;
+}
+#main{
+    width: 1140px;
+    margin: 0px auto;
+}
+
+#left{
+    width: 20%;
+    float: left;		
+}
+
+
+#ds > li{
+    display: block;
+    background-color: #3C80B5;
+    border: 1px solid #2F6695;
+    
+    
+}
+#ds > li >a, .dscon > li >a{
+    color: #fff;
+    padding-left: 10px;
+    display: block;
+    padding: 10px;
+
+}
+
+.dscon{
+    padding-left: 0px;
+}
+.dscon > li {
+    display: block;
+    background-color: #4A5059;
+    border: 1px solid #424650;
+}
+.tenxuong{
+    float: right;
+    margin-left: 10px;
+}
+#right{
+    float: right;
+    width: 75%;
+    
+    margin-right: 25px;
+    margin-top: 15px;
+    
+}
+#right span{
+    color: #2F6DC4;
+    font-size: 29px;
+    font-weight: bold;
+}
+#right input[type=button]{
+    text-transform: uppercase;
+    background: #2F6DC4;
+    border: 0;
+    color: #fff;
+    padding: 10px 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+input[type=button]:first-of-type{
+    margin: 0px;
+}
+input[type=button]:last-of-type{
+    margin-left: 10px;
+}
+
+table{
+    margin-top: 10px;
+}
+#tr1{
+    background: #2F6DC4;
+    color: #fff;
+    font-size: 97%;
+}
+.trxam{
+    background: #EEEEEE;
+}
+td:first-child, td:nth-child(7), td:nth-child(8), td:nth-child(9), td:last-child{
+    text-align: center;
+}
+td,th {
+    padding: 10px 4px;
+}
+th{
+    border-right:  1px solid #fff;
+}
+#right ul{
+    text-align: center;
+}
+#right li{
+    display: inline;
+    margin: 0px 5px;
+}

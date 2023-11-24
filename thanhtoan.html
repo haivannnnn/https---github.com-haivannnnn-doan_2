@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="thanhtoan.css">
+</head>
+<body>
+    <div class="container">
+        <div class="checkoutLayout">
+            <div class="returnCart">
+                <h1>Danh sách sản phẩm</h1>
+                <div class="list">
+                    <div class="item">
+                        <img src="images/1.webp">
+                        <div class="info">
+                            <div class="name">Ti Vi Samsung Bravia Q_Led 55 inch</div>
+                            <div class="price">400.000đ/1 sản phẩm</div>
+                        </div>
+                        <div class="quantity">1</div>
+                        <div class="returnPrice">400.000đ</div>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="right">
+                <h1>Thanh toán</h1>
+                <div class="form">
+                    <div class="group">
+                        <label for="name">Họ và tên</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+        
+                    <div class="group">
+                        <label for="phone">Số điện thoại</label>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+        
+                    <div class="group">
+                        <label for="address">Địa chỉ</label>
+                        <input type="text" name="address" id="address">
+                    </div>
+        
+                    <div class="group">
+                        <label for="country">Nước</label>
+                        <select name="country" id="country">
+                            <option value="">Chọn</option>
+                            <option value="">VIetnam</option>
+                        </select>
+                    </div>
+        
+                    <div class="group">
+                        <label for="city">Thành phố</label>
+                        <select name="city" id="city">
+                            <option value="">Chọn</option>
+                            <option value="">Hải Dương</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="return">
+                    <div class="row">
+                        <div>Total Quantity</div>
+                        <div class="totalQuantity">1</div>
+                    </div>
+                    <div class="row">
+                        <div>Total Price</div>
+                        <div class="totalPrice">400</div>
+                    </div>
+                </div>
+                <button class="buttonCheckout">Thanh toán</button>
+            </div>
+        </div>
+    </div> 
+    <script src="thanhtoan.js"></script>  
+</body>
+</html>

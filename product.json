@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "name": "Ti Vi Samsung Bravia <br> Q_Led 55 inch",
+        "price": 400000,
+        "image": "images/1.webp"
+    },
+    {
+        "id": 2,
+        "name": "Sam Sung 40 inch HD",
+        "price": 50000,
+        "image": "images/2.webp"
+    },
+    {
+        "id": 3,
+        "name": "Sam sung 40 inch",
+        "price": 40000,
+        "image": "images/3.webp"
+    }
+    ,
+    {
+        "id": 4,
+        "name": "Sam Sung OLED 4K",
+        "price": 150000,
+        "image": "images/4.webp"
+    },
+    {
+        "id": 5,
+        "name": "Sam Sung bravia QLED 50inch",
+        "price": 500000,
+        "image": "images/5.webp"
+    },
+    {
+        "id": 6,
+        "name": "Sam Sung 80 inch HD",
+        "price": 100000,
+        "image": "images/6.webp"
+    }
+]

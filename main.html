@@ -7,6 +7,7 @@
     <script type="text/javascript" src="jquery-3.6.4.min"></script>
     <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/54f0cb7e4a.js/" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Vendor/fontawesome/css/all.min.css">
     </head>
 </head>
 <body>
@@ -15,21 +16,13 @@
             <a href="" class="logo">
                 <img src="VAN.png" alt="">
             </a>
-            <div class="search">
-                <div class="set">
-                    <li><input type="text" placeholder="Bạn cần tìm gì"><i class="fas fa-search"></i></li>
-                </div>
-            </div>
         </div>
         <div id="menu">
             <div class="item">
-                <li><a href="">Trang chủ</a></li>
-                <!-- <ul class="small-item">
-                    <li><a href="">haha</a></li>
-                </ul> -->
+                <li><a href="main.html">Trang chủ</a></li>
             </div>
             <div class="item">
-                <a href="">Sản phẩm</a>
+                <a href="danhmuc.html">Sản phẩm</a>
             </div>
             <div class="item">
                 <a href="">Quảng cáo</a>
@@ -38,17 +31,20 @@
                 <a href="">Liên hệ</a>
             </div>
             <div class="item">
+                <a href="">Lịch sử đơn hàng</a>
+            </div>
+            <div class="item">
                 <a href="signup.html">Đăng ký</a>
             </div>
-            <div class="actions">
-                <div class="item">
-                    <a href="cart.html"><img src="cart.png" alt="">Giỏ (0)</a>
-                </div>
-                <div class="item">
-                    <a href="login.html"><img src="user.png" alt=""></a>
-                </div>
+            <div class="itemCart">
+                <a href="cart.html"><img src="cart.png" alt=""></a>
+                <div class="total">0</div>
+            </div>
+            <div class="itemLog">
+                <a href="login.html"><img src="user.png" alt=""></a>
             </div>
         </div>
+        
         <div id="banner">
             <div class="slide">
                 <!-- <img src="banner1.jpg" alt="anh1">
@@ -64,70 +60,140 @@
             <div class="list-product">
                 <div class="item-image">
                     <div class="product-feature-badge-item"><span>Yêu thích</span></div>
-                    <img class="item-photo" src="pro_1.jpg" alt="Chanh leo" />
-                    <a class="product-name" href="#">Sam Sung bravia QLED 50inch</a>
+                    <img class="item-photo" src="pro_1.jpg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Ti Vi Samsung Bravia Q_Led 55 inch</a>
                     <span class="new-price">400.000đ</span>
                     <span class="old-price">500.000đ</span><br>
-                    <input class="btn-addToCart" type="button" value="Chọn mua"></input>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
                 </div>
                 <div class="item-image">
                     <div class="product-feature-badge-item"><span>Yêu thích</span></div>
-                    <img class="item-photo" src="pro_2.jpg" alt="Dưa chuột" />
-                    <a class="product-name" href="#">Sam Sung 40 inch HD</a>
+                    <img class="item-photo" src="pro_2.jpg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Sam Sung 40 inch HD</a>
                     <span class="new-price">50.000đ</span>
                     <span class="old-price">80.000đ</span>
-                    <input class="btn-addToCart" type="button" value="Chọn mua"></input>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
                 </div>
                 <div class="item-image">
                     <div class="product-feature-badge-item"><span>Yêu thích</span></div>
-                    
-                    <img class="item-photo" src="pro_3.jpeg" alt="Hành tây" />
-                    <a class="product-name" href="#">Sam sung 40 inch</a>
+                    <img class="item-photo" src="pro_3.jpeg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Sam sung 40 inch</a>
                     <span class="new-price">40.000đ</span>
                     <span class="old-price">60.000đ</span>
-                    <input class="btn-addToCart" type="button" value="Chọn mua"></input>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
                 </div>
                 <div class="item-image">
                     <div class="product-feature-badge-item"><span>Yêu thích</span></div>
-                    <img class="item-photo" src="pro_4.jpeg" alt="Hồng đỏ" />
-                    <a class="product-name" href="#">Sam Sung OLED 4K</a>
+                    <img class="item-photo" src="pro_4.jpeg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Sam Sung OLED 4K</a>
                     <span class="new-price">150.000đ</span>
                     <span class="old-price">200.000đ</span>
-                    <input class="btn-addToCart" type="button" value="Chọn mua"></input>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
                 </div>
             </div>
             <div class="list-product">
                 <div class="item-image">
                     <div class="product-feature-badge-item"><span>Yêu thích</span></div>
-                    <img class="item-photo" src="pro_5.jpeg" alt="Chanh leo" />
-                    <a class="product-name" href="#">Sam Sung bravia QLED 50inch</a>
+                    <img class="item-photo" src="pro_5.jpeg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Sam Sung bravia QLED 50inch</a>
                     <span class="new-price">400.000đ</span>
                     <span class="old-price">500.000đ</span><br>
-                    <input class="btn-addToCart" type="button" value="Chọn mua"></input>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
                 </div>
                 <div class="item-image">
                     <div class="product-feature-badge-item"><span>Yêu thích</span></div>
-                    <img class="item-photo" src="pro_6.jpeg" alt="Dưa chuột" />
-                    <a class="product-name" href="#">Sam Sung 40 inch HD</a>
+                    <img class="item-photo" src="pro_6.jpeg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Sam Sung 40 inch HD</a>
                     <span class="new-price">50.000đ</span>
                     <span class="old-price">80.000đ</span>
-                    <input class="btn-addToCart" type="button" value="Chọn mua"></input>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
                 </div>
                 <div class="item-image">
                     <div class="product-feature-badge-item"><span>Yêu thích</span></div>
-                    <img class="item-photo" src="pro_7.jpeg" alt="Hành tây" />
-                    <a class="product-name" href="#">Sam sung 40 inch</a>
+                    <img class="item-photo" src="pro_7.jpeg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Sam sung 40 inch</a>
                     <span class="new-price">40.000đ</span>
                     <span class="old-price">60.000đ</span>
-                    <input class="btn-addToCart" type="button" value="Chọn mua"></input>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
                 </div>
                 <div class="item-image">
                     <div class="product-feature-badge-item"><span>Yêu thích</span></div>
-                    <img class="item-photo" src="pro_8.jpeg" alt="Hồng đỏ" />
-                    <a class="product-name" href="#">Sam Sung OLED 4K</a>
+                    <img class="item-photo" src="pro_8.jpeg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Sam Sung OLED 4K</a>
                     <span class="new-price">150.000đ</span>
                     <span class="old-price">200.000đ</span>
-                    <input class="btn-addToCart" type="button" value="Chọn mua"></input>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
+                </div>
+            </div>
+            <div class="cate">
+                <h2>Sản phẩm khuyến mại</h2>
+            </div>
+            <div class="list-product">
+                <div class="item-image">
+                    <div class="product-feature-badge-sale_off"><span>-10%</span></div>
+                    <img class="item-photo" src="pro_1.jpg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Sam Sung bravia QLED 50inch</a>
+                    <span class="new-price">400.000đ</span>
+                    <span class="old-price">500.000đ</span><br>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
+                </div>
+                <div class="item-image">
+                    <div class="product-feature-badge-sale_off"><span>-20%</span></div>
+                    <img class="item-photo" src="pro_2.jpg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Sam Sung 40 inch HD</a>
+                    <span class="new-price">50.000đ</span>
+                    <span class="old-price">80.000đ</span>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
+                </div>
+                <div class="item-image">
+                    <div class="product-feature-badge-sale_off"><span>-30%</span></div>
+                    <img class="item-photo" src="pro_3.jpeg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Sam sung 40 inch</a>
+                    <span class="new-price">40.000đ</span>
+                    <span class="old-price">60.000đ</span>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
+                </div>
+                <div class="item-image">
+                    <div class="product-feature-badge-sale_off"><span>-25%</span></div>
+                    <img class="item-photo" src="pro_4.jpeg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Sam Sung OLED 4K</a>
+                    <span class="new-price">150.000đ</span>
+                    <span class="old-price">200.000đ</span>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
+                </div>
+            </div>
+            <div class="list-product">
+                <div class="item-image">
+                    <div class="product-feature-badge-sale_off"><span>-20%</span></div>
+                    <img class="item-photo" src="pro_5.jpeg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Sam Sung bravia QLED 50inch</a>
+                    <span class="new-price">400.000đ</span>
+                    <span class="old-price">500.000đ</span><br>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
+                </div>
+                <div class="item-image">
+                    <div class="product-feature-badge-sale_off"><span>-18%</span></div>
+                    <img class="item-photo" src="pro_6.jpeg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Sam Sung 40 inch HD</a>
+                    <span class="new-price">50.000đ</span>
+                    <span class="old-price">80.000đ</span>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
+                </div>
+                <div class="item-image">
+                    <div class="product-feature-badge-sale_off"><span>-15%</span></div>
+                    <img class="item-photo" src="pro_7.jpeg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Sam sung 40 inch</a>
+                    <span class="new-price">40.000đ</span>
+                    <span class="old-price">60.000đ</span>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
+                </div>
+                <div class="item-image">
+                    <div class="product-feature-badge-sale_off"><span>-13%</span></div>
+                    <img class="item-photo" src="pro_8.jpeg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Sam Sung OLED 4K</a>
+                    <span class="new-price">150.000đ</span>
+                    <span class="old-price">200.000đ</span>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
                 </div>
             </div>
             <div class="cate">
@@ -135,65 +201,66 @@
             </div>
             <div class="list-product">
                 <div class="item-image">
-                    <img class="item-photo" src="pro_1.jpg" alt="Chanh leo" />
-                    <a class="product-name" href="#">Sam Sung bravia QLED 50inch</a>
+                    <img class="item-photo" src="pro_1.jpg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Sam Sung bravia QLED 50inch</a>
                     <span class="new-price">400.000đ</span>
                     <span class="old-price">500.000đ</span><br>
-                    <input class="btn-addToCart" type="button" value="Chọn mua"></input>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
                 </div>
                 <div class="item-image">
-                    <img class="item-photo" src="pro_2.jpg" alt="Dưa chuột" />
-                    <a class="product-name" href="#">Sam Sung 40 inch HD</a>
+                    <img class="item-photo" src="pro_2.jpg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Sam Sung 40 inch HD</a>
                     <span class="new-price">50.000đ</span>
                     <span class="old-price">80.000đ</span>
-                    <input class="btn-addToCart" type="button" value="Chọn mua"></input>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
                 </div>
                 <div class="item-image">
-                    <img class="item-photo" src="pro_3.jpeg" alt="Hành tây" />
-                    <a class="product-name" href="#">Sam sung 40 inch</a>
+                    <img class="item-photo" src="pro_3.jpeg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Sam sung 40 inch</a>
                     <span class="new-price">40.000đ</span>
                     <span class="old-price">60.000đ</span>
-                    <input class="btn-addToCart" type="button" value="Chọn mua"></input>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
                 </div>
                 <div class="item-image">
-                    <img class="item-photo" src="pro_4.jpeg" alt="Hồng đỏ" />
-                    <a class="product-name" href="#">Sam Sung OLED 4K</a>
+                    <img class="item-photo" src="pro_4.jpeg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Sam Sung OLED 4K</a>
                     <span class="new-price">150.000đ</span>
                     <span class="old-price">200.000đ</span>
-                    <input class="btn-addToCart" type="button" value="Chọn mua"></input>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
                 </div>
             </div>
             <div class="list-product">
                 <div class="item-image">
-                    <img class="item-photo" src="pro_5.jpeg" alt="Chanh leo" />
-                    <a class="product-name" href="#">Sam Sung bravia QLED 50inch</a>
+                    <img class="item-photo" src="pro_5.jpeg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Sam Sung bravia QLED 50inch</a>
                     <span class="new-price">400.000đ</span>
                     <span class="old-price">500.000đ</span><br>
-                    <input class="btn-addToCart" type="button" value="Chọn mua"></input>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
                 </div>
                 <div class="item-image">
-                    <img class="item-photo" src="pro_6.jpeg" alt="Dưa chuột" />
-                    <a class="product-name" href="#">Sam Sung 40 inch HD</a>
+                    <img class="item-photo" src="pro_6.jpeg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Sam Sung 40 inch HD</a>
                     <span class="new-price">50.000đ</span>
                     <span class="old-price">80.000đ</span>
-                    <input class="btn-addToCart" type="button" value="Chọn mua"></input>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
                 </div>
                 <div class="item-image">
-                    <img class="item-photo" src="pro_7.jpeg" alt="Hành tây" />
-                    <a class="product-name" href="#">Sam sung 40 inch</a>
+                    <img class="item-photo" src="pro_7.jpeg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Sam sung 40 inch</a>
                     <span class="new-price">40.000đ</span>
                     <span class="old-price">60.000đ</span>
-                    <input class="btn-addToCart" type="button" value="Chọn mua"></input>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
                 </div>
                 <div class="item-image">
-                    <img class="item-photo" src="pro_8.jpeg" alt="Hồng đỏ" />
-                    <a class="product-name" href="#">Sam Sung OLED 4K</a>
+                    <img class="item-photo" src="pro_8.jpeg" alt="Tivi" />
+                    <a class="product-name" href="chitiet.html">Sam Sung OLED 4K</a>
                     <span class="new-price">150.000đ</span>
                     <span class="old-price">200.000đ</span>
-                    <input class="btn-addToCart" type="button" value="Chọn mua"></input>
+                    <input class="btn-addToCart" type="button" value="Chọn mua">
                 </div>
             </div>
         </div>
+
         <div id="footer">
             <div class="box">
                 <div class="logo">

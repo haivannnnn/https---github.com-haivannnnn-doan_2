@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chi tiet</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Header -->
+        </header>
+
+        <div class="product-details">
+            <div class="product-image">
+                <img src="pro_1.jpg" alt="Product Image" id="productImage">
+            </div>
+            <div class="product-info">
+                <h1 id="productName"></h1>
+                <p><strong>Giá:</strong> <span id="productPrice"></span>đ</p>
+                <div class="quantity">
+                    <button onclick="changeQuantity('-')">-</button>
+                    <span id="productQuantity">0</span>
+                    <button onclick="changeQuantity('+')">+</button>
+                </div>
+                <button onclick="addToCart()">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Lấy thông tin sản phẩm từ product.json hoặc bất kỳ nguồn dữ liệu nào khác
+        // Đoạn mã JavaScript sẽ hiển thị thông tin sản phẩm dựa trên ID sản phẩm được truyền qua URL
+        document.addEventListener('DOMContentLoaded', function() {
+            // Lấy thông tin ID sản phẩm từ URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id'); // Lấy ID sản phẩm từ URL
+
+            // Lấy thông tin sản phẩm từ product.json (hoặc nguồn dữ liệu khác)
+            fetch('product.json')
+                .then(response => response.json())
+                .then(data => {
+                    const product = data.find(item => item.id == productId);
+
+                    // Hiển thị thông tin sản phẩm
+                    document.getElementById('productName').innerText = product.name;
+                    document.getElementById('productPrice').innerText = product.price;
+                    document.getElementById('productImage').src = product.image;
+                    document.getElementById('productQuantity').innerText = 1; // Số lượng mặc định là 1
+                });
+        });
+
+        // Đoạn mã JavaScript để thêm sản phẩm vào giỏ hàng
+        function addToCart() {
+            // Thêm logic để thêm sản phẩm vào giỏ hàng
+            // Bạn có thể sử dụng listCart và cookie để lưu giỏ hàng tương tự như trong mã trang chủ
+            // Sau khi thêm vào giỏ hàng, chuyển hướng người dùng đến trang giỏ hàng hoặc thông báo thành công
+        }
+
+        // Đoạn mã JavaScript để thay đổi số lượng sản phẩm
+        function changeQuantity(type) {
+            // Thêm logic để thay đổi số lượng sản phẩm
+            // Cập nhật số lượng và hiển thị trên giao diện
+        }
+    </script>
+</body>
+</html>
